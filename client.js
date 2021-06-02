@@ -11,7 +11,9 @@ const connect = () => {
 
   conn.on("connect", () => {
     console.log("player connected"); // code that does something when the connection is first established
+    conn.write("Name: joo");
   });
+  
 
   conn.on('data', (message) => {
     console.log('Server says: ' + message);
