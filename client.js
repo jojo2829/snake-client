@@ -23,6 +23,6 @@ const connect = () => {
   return conn;
 };
 
-console.log("Connecting ...");
-
-module.exports = connect;
+module.exports = {
+  connect
+}
